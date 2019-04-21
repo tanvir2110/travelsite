@@ -1,0 +1,148 @@
+{% load static %}
+<html>
+<head>
+	<title>destination</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/mylink1.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+	<style type="text/css">
+			body 
+			{	
+				background-image: url(agrabg2.jpg);
+		    	/* Center and scale the image*/
+		        background-position: center;
+	    		background-repeat: no-repeat;
+	    		background-size: 100%;
+	    		background-attachment: fixed;
+	    		margin: 0px;
+			}
+	</style>
+
+</head>
+	<body>
+		<a href="map_page.html"><i class="material-icons" style="font-size:50px;position: absolute;left: 25px; top: 8px">public &emsp; &emsp;</i></a>
+		<div id="header" align="right">
+				<div id="myNav" class="overlay">
+	    	<a href="javascript:void(0)" class="closebtn"	 onclick="closeNav()">&times;</a>
+	    	<div class="overlay-content">
+	    		<a href="#">About</a>
+	    		<a href="#">Services</a>
+	    		<a href="#">Clients</a>
+	    		<a href="#">Contact</a>
+	  		</div>
+		</div>
+		<span style="cursor:pointer;" onclick="openNav()">Destinations <i class="fa fa-angle-down" style="font-size:15px"></i>&emsp; &emsp;</span>
+		<script>
+			function openNav() {
+	  		document.getElementById("myNav").style.width = "100%";
+			}
+
+			function closeNav() {
+	  		document.getElementById("myNav").style.width = "0%";
+			}
+		</script>
+		<!-- <a href="h_page.html" onclick="openNav"> Destinations <i class="fa fa-angle-down" style="font-size:15px"></i> &emsp;&emsp;</a> -->
+		<a href="h_page.html"> About <i class="fa fa-angle-down" style="font-size:15px"></i> &emsp;&emsp; </a>
+		</div>
+
+
+	<table>
+	<tr>
+	<td>
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+		  
+		  <img src="{% static 'css/tajmahal.jpg' %}" style="width:650px;height:452px">
+		  <div style="color: beige;
+	  				font-size: 20px;
+	  				font-weight: 400;
+	  				padding: 8px 12px;
+	 	 			position: absolute;
+	  				bottom: 20px;
+	  				width: 100%;
+	  				text-align: right;
+	  				text-shadow: 2px 1px black;">Taj Mahal</div>
+		</div>
+
+		<div class="mySlides fade">
+		  
+		  <img src="{% static 'css/agrafort.jpg' %}" style="width:650px;height:452px">
+		  <div style="color: yellow;
+					font-size: 20px;
+	  				font-weight: 400;
+	  				padding: 8px 12px;
+	 	 			position: absolute;
+	  				bottom: 20px;
+	  				width: 100%;
+	  				text-align: right;
+	  				text-shadow: 2px 1px black;">Agra Fort</div>
+		</div>
+		<div class="mySlides fade">
+		  
+		  <img src="{% static 'css/FatehpurSikri.jpg' %}" style="width:650px;height:452px">
+		  <div style="color: white;
+	  				font-size: 20px;
+	  				font-weight: 400;
+	  				padding: 8px 12px;
+	 	 			position: absolute;
+	  				bottom: 20px;
+	  				width: 100%;
+	  				text-align: right;
+	  				text-shadow: 2px 1px black;">Fatehpur Sikri</div>
+		</div>
+
+		<div class="mySlides fade">
+		  
+		  <img src="{% static 'css/agramarket2.jpg' %}" style="width:650px;height:452px">
+		  <div style="color: white;
+	  				font-size: 20px;
+	  				font-weight: 400;
+	  				padding: 8px 12px;
+	 	 			position: absolute;
+	  				bottom: 20px;
+	  				width: 100%;
+	  				text-align: right;
+	  				text-shadow: 2px 1px black;">Markets of Agra</div>
+		</div>
+		<div style="text-align:center">
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span>
+		  <span class="dot"></span> 
+		</div>
+	</div>	
+	</td>
+	<td style="display:inline">
+		<p style="font-family: Comic Sans MS">
+		Wish to realize a dream vacation? Welcome to the amazing tourism city of the Taj Mahal - Agra, India.</p><p style="font-family: Comic Sans MS">The seat of the great Mughal rulers for ages, Agra offers its treasure trove for all the tourists from India and abroad.</p><p style="font-family: Comic Sans MS">The city stands in testimony to the great amount of architectural activity of the Mughals.</p><p style="font-family: Comic Sans MS"> Taj Mahal is the epitome of love, poem in white marble,one of the Seven Wonders of the World besides being the pride of India.</p><p style="font-family: Comic Sans MS">Agra is also known for its flourishing bazars (markets) where the true cosmopolitan character of the city comes out in all its dimensions.</p><p style="font-family: Comic Sans MS"> With Taj Mahal, Fatehpur Sikri and Agra Fort already in the list of to do things in Agra, the charms of Agra bazar is something unique, which cannot be missed.</p>
+	</td>
+	</tr>
+	</table>
+	<br>
+	<script type="text/javascript">
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+	    var i;
+	    var slides = document.getElementsByClassName("mySlides");
+	    var dots = document.getElementsByClassName("dot");
+	    for (i = 0; i < slides.length; i++) {
+	       slides[i].style.display = "none";  
+	    }
+	    slideIndex++;
+	    if (slideIndex > slides.length) {slideIndex = 1}    
+	    for (i = 0; i < dots.length; i++) {
+	        dots[i].className = dots[i].className.replace(" active", "");
+	    }
+	    slides[slideIndex-1].style.display = "block";  
+	    dots[slideIndex-1].className += " active";
+	    setTimeout(showSlides, 2000); // Change image every 2 seconds
+	}
+
+	</script>
+
+	    
+	</body>
+</html>

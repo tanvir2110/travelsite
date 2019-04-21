@@ -1,0 +1,154 @@
+{% load static %}
+<html>
+<head>
+	<title>kolkata</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/mylink1.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+	<style type="text/css">
+			body 
+			{	
+				background-image: url(kolkatabg4.jpg);
+		    	/* Center and scale the image*/
+		    	background-opacity: 0.1; 
+		        background-position: center;
+	    		background-repeat: no-repeat;
+	    		background-size: 100%;
+	    		background-attachment: fixed;
+	    		margin: 0px;
+			}
+	</style>
+
+</head>
+	<body>
+		<a href="map_page.html"><i class="material-icons" style="font-size:50px;position: absolute;left: 25px; top: 8px">public &emsp; &emsp;</i></a>
+		<div id="header" align="right">
+		<a href="h_page.html" style="color: #e15b00; border-bottom: 2px solid #e15b00">&emsp;&emsp; Home <i class="fa fa-angle-down" style="font-size:15px"></i>&emsp; &emsp;</a>
+		
+		<a href="h_page.html"> Go Back <i class="fa fa-angle-down" style="font-size:15px"></i>&emsp; &emsp;</a>
+		<div id="myNav" class="overlay">
+	    	<a href="javascript:void(0)" class="closebtn"	 onclick="closeNav()">&times;</a>
+	    	<div class="overlay-content">
+	    		<a href="#">About</a>
+	    		<a href="#">Services</a>
+	    		<a href="#">Clients</a>
+	    		<a href="#">Contact</a>
+	  		</div>
+		</div>
+		
+		
+		<script>
+			function openNav() {
+	  		document.getElementById("myNav").style.width = "100%";
+			}
+
+			function closeNav() {
+	  		document.getElementById("myNav").style.width = "0%";
+			}
+		</script>
+
+
+
+
+	<table>
+	<tr>
+	<td>
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+		  
+		  <img src="{% static 'css/victoriamemorial.jpg' %}" style="width:650px;height:452px">
+		  <div style="color: white;
+	  				font-size: 20px;
+	  				font-weight: 400;
+	  				padding: 8px 12px;
+	 	 			position: absolute;
+	  				bottom: 20px;
+	  				width: 100%;
+	  				text-align: right;
+	  				text-shadow: 2px 1px black;">Victoria Memorial</div>
+		</div>
+
+		<div class="mySlides fade">
+		  
+		  <img src="{% static 'css/Kumartuli.jpg' %}" style="width:650px;height:452px">
+		  <div style="color: white;
+					font-size: 20px;
+	  				font-weight: 400;
+	  				padding: 8px 12px;
+	 	 			position: absolute;
+	  				bottom: 20px;
+	  				width: 100%;
+	  				text-align: right;
+	  				text-shadow: 2px 1px black;">Kumartuli</div>
+		</div>
+		<div class="mySlides fade">
+		  
+		  <img src="{% static 'css/kalighat.jpg' %}" style="width:650px;height:452px">
+		  <div style="color: white;
+	  				font-size: 20px;
+	  				font-weight: 400;
+	  				padding: 8px 12px;
+	 	 			position: absolute;
+	  				bottom: 20px;
+	  				width: 100%;
+	  				text-align: right;
+	  				text-shadow: 2px 1px black;">Kalighat</div>
+		</div>
+
+		<div class="mySlides fade">
+		  
+		  <img src="{% static 'css/sciencecity.jpg' %}" style="width:650px;height:452px">
+		  <div style="color: white;
+	  				font-size: 20px;
+	  				font-weight: 400;
+	  				padding: 8px 12px;
+	 	 			position: absolute;
+	  				bottom: 20px;
+	  				width: 100%;
+	  				text-align: right;
+	  				text-shadow: 2px 1px black;">Science City</div>
+		</div>
+		
+		<div style="text-align:center">
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span>
+		  <span class="dot"></span> 
+		</div>
+	</div>	
+	</td>
+	<td style="display:inline">
+		<p style="font-family: Comic Sans MS; color: yellow; font-size: 40px; text-shadow: black 2px 1px"> KOLKATA </p>
+		<p style="font-family: Comic Sans MS; color: black">
+		Kolkata the 'City of Joy' of West Bengal is the most apt place for the eager visitants as places of interest in Kolkata are numerous.</p><p style="font-family: Comic Sans MS; color: black">This eventful city with its many marvels has truly a lot to offer. It is one the most sought after destinations for the tourists from all over the globe.</p><p style="font-family: Comic Sans MS; color: black">The British Raj-era architectural gems, sprawling gardens and historical colleges, universities, with museums, National Library, Auditoriums, Theater Halls, Art galleries, markets, The Festivals, sports stadium, Gangar ghats are of great attractions. </p><p style="font-family: Comic Sans MS; color: black">TIt has many places of great pilgrimage. Known as the cultural capital of India, Kolkata continues to spawn generations of poets, writers, film producers and Nobel Prize winners. If your trip only allows for a visit of one or two of India's metropolitan cit  You definitely won't forget the city on the Hooghly and a boat/ launch trip on it is truly enjoyable.</p>
+	</td>
+	</tr>
+	</table>
+	<br>
+	<script type="text/javascript">
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+	    var i;
+	    var slides = document.getElementsByClassName("mySlides");
+	    var dots = document.getElementsByClassName("dot");
+	    for (i = 0; i < slides.length; i++) {
+	       slides[i].style.display = "none";  
+	    }
+	    slideIndex++;
+	    if (slideIndex > slides.length) {slideIndex = 1}    
+	    for (i = 0; i < dots.length; i++) {
+	        dots[i].className = dots[i].className.replace(" active", "");
+	    }
+	    slides[slideIndex-1].style.display = "block";  
+	    dots[slideIndex-1].className += " active";
+	    setTimeout(showSlides, 2000); // Change image every 2 seconds
+	}
+
+	</script>
+
+	    
+	</body>
+</html>

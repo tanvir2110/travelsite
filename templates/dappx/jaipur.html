@@ -1,0 +1,186 @@
+{% load static %}
+<html>
+<head>
+	<title>jaipur</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/mylink1.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+	<style type="text/css">
+			body 
+			{	
+				background-image: url(jaipurbg9.jpg);
+		    	/* Center and scale the image*/
+		    	
+		        background-position: center;
+	    		background-repeat: no-repeat;
+	    		background-size: 100%;
+	    		background-attachment: fixed;
+	    		margin: 0px;
+			}
+	</style>
+
+</head>
+<body>
+		<a href="map_page.html"><i class="material-icons" style="font-size:50px;position: absolute;left: 25px; top: 8px">public &emsp; &emsp;</i></a>
+		<div id="header" align="right">
+		<a href="h_page.html" style="color: #e15b00; border-bottom: 2px solid #e15b00">&emsp;&emsp; Home <i class="fa fa-angle-down" style="font-size:15px"></i>&emsp; &emsp;</a>
+		
+		<a href="h_page.html"> Go Back <i class="fa fa-angle-down" style="font-size:15px"></i>&emsp; &emsp;</a>
+		<div id="myNav" class="overlay">
+	    	<a href="javascript:void(0)" class="closebtn"	 onclick="closeNav()">&times;</a>
+	    	<div class="overlay-content">
+	    		<a href="#">About</a>
+	    		<a href="#">Services</a>
+	    		<a href="#">Clients</a>
+	    		<a href="#">Contact</a>
+	  		</div>
+		</div>
+		
+		
+		<script>
+			function openNav() {
+	  		document.getElementById("myNav").style.width = "100%";
+			}
+
+			function closeNav() {
+	  		document.getElementById("myNav").style.width = "0%";
+			}
+		</script>
+
+
+	<table>
+	<tr>
+	<td>
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+		  
+		  <img src="{% static 'css/jaigarhfort.jpg' %}" style="width:650px;height:452px">
+		  <div style="color: white;
+	  				font-size: 20px;
+	  				font-weight: 400;
+	  				padding: 8px 12px;
+	 	 			position: absolute;
+	  				bottom: 20px;
+	  				width: 100%;
+	  				text-align: right;
+	  				text-shadow: 2px 1px black;">Jaigarh Fort</div>
+		</div>
+
+		<div class="mySlides fade">
+		  
+		  <img src="{% static 'css/amberpalace.jpg' %}" style="width:650px;height:452px">
+		  <div style="color: white;
+					font-size: 20px;
+	  				font-weight: 400;
+	  				padding: 8px 12px;
+	 	 			position: absolute;
+	  				bottom: 20px;
+	  				width: 100%;
+	  				text-align: right;
+	  				text-shadow: 2px 1px black;">Amber Palace</div>
+		</div>
+		<div class="mySlides fade">
+		  
+		  <img src="{% static 'css/hawamahal.jpg' %}" style="width:650px;height:452px">
+		  <div style="color: white;
+	  				font-size: 20px;
+	  				font-weight: 400;
+	  				padding: 8px 12px;
+	 	 			position: absolute;
+	  				bottom: 20px;
+	  				width: 100%;
+	  				text-align: right;
+	  				text-shadow: 2px 1px black;">Hawa Mahal</div>
+		</div>
+			<div class="mySlides fade">
+		  
+		  <img src="{% static 'css/jantarmantar.jpg' %}" style="width:650px;height:452px">
+		  <div style="color: white;
+	  				font-size: 20px;
+	  				font-weight: 400;
+	  				padding: 8px 12px;
+	 	 			position: absolute;
+	  				bottom: 20px;
+	  				width: 100%;
+	  				text-align: right;
+	  				text-shadow: 2px 1px black;">Jantar Mantar</div>
+		</div>
+		<div class="mySlides fade">
+		  
+		  <img src="{% static 'css/citypalace.jpg' %}" style="width:650px;height:452px">
+		  <div style="color: white;
+	  				font-size: 20px;
+	  				font-weight: 400;
+	  				padding: 8px 12px;
+	 	 			position: absolute;
+	  				bottom: 20px;
+	  				width: 100%;
+	  				text-align: right;
+	  				text-shadow: 2px 1px black;">City Palace</div>
+		</div>
+		<div class="mySlides fade">
+		  
+		  <img src="nahargarhfort.jpg" style="width:650px;height:452px">
+		  <div style="color: white;
+	  				font-size: 20px;
+	  				font-weight: 400;
+	  				padding: 8px 12px;
+	 	 			position: absolute;
+	  				bottom: 20px;
+	  				width: 100%;
+	  				text-align: right;
+	  				text-shadow: 2px 1px black;">Nahargarh Fort</div>
+		</div>
+			<div class="mySlides fade">
+		  
+		  <img src="{% static 'css/sambharlake.jpg' %}" style="width:650px;height:452px">
+		  <div style="color: white;
+	  				font-size: 20px;
+	  				font-weight: 400;
+	  				padding: 8px 12px;
+	 	 			position: absolute;
+	  				bottom: 20px;
+	  				width: 100%;
+	  				text-align: right;
+	  				text-shadow: 2px 1px black;">Sambhar Lake</div>
+		</div>
+		<div style="text-align:center">
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span>
+		  <span class="dot"></span> 
+		</div>
+	</div>	
+	</td>
+	<td style="display:inline"><p style="font-family: Comic Sans MS; color: black; font-size: 30px; text-shadow: yellow 2px 1px"> JAIPUR</p><p style="font-family: Comic Sans MS; color: white; text-shadow: black 1px 1px">Planned by Vidyadhar Bhattacharya, Jaipur holds the distinction of being the first planned city of India. Renowned globally for its coloured gems, the capital city of Rajasthan combines the allure of its ancient history with all the advantages of a metropolis. The bustling modern city is one of the three corners of the golden triangle that includes Delhi, Agra and Jaipur.</p><p style="font-family: Comic Sans MS; color: white; text-shadow: black 1px 1px">The story goes that in 1876, the Prince of Wales visited India on a tour. Since the colour pink was symbolic of hospitality, Maharaja Ram Singh of Jaipur painted the entire city pink. The pink that colours the city makes for a marvellous spectacle to behold. Jaipur rises up majestically against the backdrop of the forts Nahargarh, Jaigarh and Garh Ganesh Temple.</p><p style="font-family: Comic Sans MS; color: white; text-shadow: black 1px 1px">Jaipur traces back its origins to 1727 when it was established by Jai Singh II, the Raja of Amber. He shifted his capital from Amber to the new city because of the rapidly-growing population and an increasing water scarcity. Noted architect Vidyadhar Bhattacharya used the established principles of Vastu Shastra to build the city.</p>
+	</td>
+	</tr>
+	</table>
+	<br>
+	<script type="text/javascript">
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+	    var i;
+	    var slides = document.getElementsByClassName("mySlides");
+	    var dots = document.getElementsByClassName("dot");
+	    for (i = 0; i < slides.length; i++) {
+	       slides[i].style.display = "none";  
+	    }
+	    slideIndex++;
+	    if (slideIndex > slides.length) {slideIndex = 1}    
+	    for (i = 0; i < dots.length; i++) {
+	        dots[i].className = dots[i].className.replace(" active", "");
+	    }
+	    slides[slideIndex-1].style.display = "block";  
+	    dots[slideIndex-1].className += " active";
+	    setTimeout(showSlides, 2000); // Change image every 2 seconds
+	}
+
+	</script>
+
+	    
+	</body>
+</html>

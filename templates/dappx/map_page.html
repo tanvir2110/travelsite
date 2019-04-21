@@ -1,0 +1,125 @@
+{% load static %}
+<html>
+<head>
+	<title>map</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/mylink.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+	<style type="text/css">
+			body 
+			{
+				background-image: url(wt_map.jpg);
+		        background-position: center;
+	    		background-repeat: no-repeat;
+	    		background-size: 100%;
+	    		background-attachment: fixed;
+	    		margin: 0px;
+			}
+			
+	</style>
+	<script>
+		function openNav() {
+  			document.getElementById("myNav").style.width = "100%";
+		}
+
+		function closeNav() {
+  			document.getElementById("myNav").style.width = "0%";
+		}
+	</script>
+</head>
+	<body>
+		<a href="map_page.html">
+			<i class="fa fa-globe fa-2x" style="position: absolute;padding-top: 5px;padding-left: 20px"></i>
+		</a>
+		<div id="header" align="right">
+			<table>
+				<tr>
+					<td class="nav-tab">
+						<a href="h_page.html" ><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+					</td>
+					<td class="nav-tab">
+						<a href="h_page.html"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i> Planner</a>						
+					</td>
+					<td class="nav-tab destinations">
+							<a href="#"><i class="fa fa-location-arrow" aria-hidden="true"></i> Destinations</a>
+								<table class="dropdown">
+								<tr>
+									<td>
+										<a href="delhi.html" target="_blank">
+											Delhi
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="agra.html" target="_blank">
+											Agra
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="varanasi.html" target="_blank">
+											Varanasi
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="jaipur.html" target="_blank">
+											Jaipur
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="kolkata.html" target="_blank">
+											Kolkata
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+
+								</table>
+					</td>
+					<td class="nav-tab">
+						<a href="#" onclick="openNav()"><i class="fa fa-link" aria-hidden="true"></i> About</a>
+
+						&nbsp;
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="myNav" class="overlay">
+	    	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	    	<div class="overlay-content">
+	    		<a href="#">About</a>
+	    		<a href="#">Services</a>
+	    		<a href="#">Clients</a>
+	    		<a href="#">Contact</a>
+	  		</div>
+		</div>
+
+		<a href="map_page.html" class="d">
+				<i class="material-icons" style="position: fixed; left: 380px; top: 530px; background-attachment: fixed;">
+				</i>
+		</a>
+			
+			<!-- name="kerala" -->
+		<a href="delhi.html" class="d" title="Delhi"><i class="material-icons" style="position: absolute; left: 29%; top: 35%; background-attachment: fixed;">place</i></a>
+		<a href="jaipur.html" class="d" title="Jaipur"><i class="material-icons" style="position: absolute; left: 24%; top: 40%; background-attachment: fixed;">place</i></a><!-- name="jaipur" -->
+		<a href="agra.html" class="d" title="Agra"><i class="material-icons" style="position: absolute; left: 31%; top: 39%; background-attachment: fixed;">place</i></a><!-- name="agra" -->
+		
+		<a href="varanasi.html" class="d" title="Varanasi"><i class="material-icons" style="position: absolute; left: 33%; top: 40%; background-attachment: fixed;">place</i></a><!-- name="varanasi" -->
+		
+		<a href="kolkata.html" class="d" title="Kolkata"><i class="material-icons" style="position: absolute; left: 40%; top: 53%; background-attachment: fixed;">place</i></a><!-- name="kolkata" -->
+		
+
+
+
+
+	    
+	</body>
+</html>

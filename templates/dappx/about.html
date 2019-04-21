@@ -1,0 +1,186 @@
+{% load static %}
+<html>
+<head>
+	<title>about</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/mylink.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+	<style type="text/css">
+			body 
+			{
+				background-opacity: 0.1;
+		        background-position: center;
+	    		background-repeat: no-repeat;
+	    		background-size: 100%;
+	    		background-attachment: fixed;
+	    		margin: 0px;
+			}
+			.nav-tab:hover {
+				background-color: #f79859;
+			}
+			.nav-tab {
+				padding: 10px;
+				color: black;
+				border-left: 0.2px solid grey;
+				border-radius: 4px;
+			}
+			.nav-tab a:link {
+				color: black;
+			}
+			.nav-tab a:hover, a:active, a:focus {
+				color: black;
+			}
+			#header {
+				border: 0.2px solid grey;
+			}
+			.dropdown {
+				position: absolute;
+				margin-top: 1%;
+				margin-left: -1%;
+				background-color: rgba(245, 255, 250,0.6);
+				opacity: 0;
+				-webkit-transition: opacity 1s ease-in;
+				-moz-transition: opacity 1s ease-in;
+		    	-o-transition: opacity 1s ease-in;
+    			-ms-transition: opacity 1s ease-in;
+    			transition: opacity 1s ease-in;
+			}
+			.dropdown td {
+				border-bottom: 0.2px solid grey;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				width: 160px;
+				padding: 10px;
+				cursor: pointer;
+			}
+			.destinations:hover .dropdown {
+				opacity: 1;
+			}
+	</style>
+	<script>
+		function openNav() {
+  			document.getElementById("myNav").style.width = "100%";
+		}
+
+		function closeNav() {
+  			document.getElementById("myNav").style.width = "0%";
+		}
+		</script>
+</head>
+	<body>
+		<a href="map_page.html">
+			<i class="fa fa-globe fa-2x" style="position: absolute;padding-top: 5px;padding-left: 20px"></i>
+		</a>
+		<div id="header" align="right">
+			<table>
+				<tr>
+					<td class="nav-tab">
+						<a href="h_page.html" ><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+					</td>
+					<td class="nav-tab">
+						<a href="h_page.html"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i> Planner</a>						
+					</td>
+					<td class="nav-tab destinations">
+							<a href="#"><i class="fa fa-location-arrow" aria-hidden="true"></i> Destinations</a>
+								<table class="dropdown">
+
+								<tr>
+									<td>
+										<a href="delhi.html" target="_blank">
+											Delhi
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="agra.html" target="_blank">
+											Agra
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="varanasi.html" target="_blank">
+											Varanasi
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="jaipur.html" target="_blank">
+											Jaipur
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="kolkata.html" target="_blank">
+											Kolkata
+										</a>
+									</td>
+								</tr>
+
+								</table>
+					</td>
+					<td class="nav-tab">
+						<a href="#" onclick="openNav()"><i class="fa fa-link" aria-hidden="true"></i> About</a>
+					</td>
+					<td class="nav-tab">
+						<a href="login.html"><i  class="fa fa-user-circle-o" aria-hidden="true"></i> Log Out</a>
+					</td>
+					<td>
+						&nbsp;
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="myNav" class="overlay">
+	    	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	    	<div class="overlay-content">
+	    		<a href="#">About</a>
+	    		<a href="#">Services</a>
+	    		<a href="#">Clients</a>
+	    		<a href="#">Contact</a>
+	  		</div>
+		</div>
+	<div style="position: absolute; top: 7.8%; left: 0%; right: 0%; bottom: 45%; background-color: #bc721e; padding: 50px;">
+			<span style="font-size: 100px;color: white; word-spacing: -40px; letter-spacing: -4px;position: absolute; left: 33%;color: #edd0ad; font-family: monospace;">
+				About Us
+			</span>
+			<br/>
+			<span style="font-size: 20px; color: white; position: absolute; left: 28%; top: 60%; font-family: monospace;">
+				How we plan on changing your travel experience	
+			</span>
+	</div>
+	<div style="position: absolute; top: 57%; text-align: center; left: 20%; right: 20%">
+			<p style="font-family: Comic Sans MS; color: black; text-align: justify;">
+	To make such experience easier to achieve, our focus has been how to help people travel better especially in India. For this reason, we have showcased a long list of tour packages to choose from. If you are into adventure, we probably have one for you. If you are into culture, then you have come to the right place. Our staff are routine travelers with proven track records. Should you require assistance on travel itineraries, booking, or travel advice in specific countries, please contact us and we’ll be more than happy to help you out.</p>
+	<p style="font-family: Comic Sans MS; color: black; text-align: justify;">
+We would like to thank those who have been very resourceful to the including our genius our visitors. At Travel India, we are looking forward to providing more value-added services to travelers around the world. We hope you enjoy surfing as much as we do.</p>
+	</div>
+
+	<script type="text/javascript">
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+	    var i;
+	    var slides = document.getElementsByClassName("mySlides");
+	    var dots = document.getElementsByClassName("dot");
+	    for (i = 0; i < slides.length; i++) {
+	       slides[i].style.display = "none";  
+	    }
+	    slideIndex++;
+	    if (slideIndex > slides.length) {slideIndex = 1}    
+	    for (i = 0; i < dots.length; i++) {
+	        dots[i].className = dots[i].className.replace(" active", "");
+	    }
+	    slides[slideIndex-1].style.display = "block";  
+	    dots[slideIndex-1].className += " active";
+	    setTimeout(showSlides, 2000); // Change image every 2 seconds
+	}
+
+	</script>
+</body>
+</html>
